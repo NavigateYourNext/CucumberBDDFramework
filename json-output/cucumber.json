@@ -3,102 +3,97 @@
     "line": 1,
     "elements": [
       {
-        "line": 37,
+        "line": 2,
         "name": "Amazon Login Test Scenario",
         "description": "",
-        "id": "amazon-login-feature;amazon-login-test-scenario;;2",
+        "id": "amazon-login-feature;amazon-login-test-scenario",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 15943730883,
+              "duration": 8468927437,
               "status": "passed"
             },
-            "line": 26,
+            "line": 4,
             "name": "User is already on Login Page",
             "match": {
-              "location": "LoginStepDefination.user_already_on_login_page()"
+              "location": "loginDataDrivenStepDefination.user_is_already_on_Login_Page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 17367949,
+              "duration": 19203335,
               "status": "passed"
             },
-            "line": 27,
+            "line": 5,
             "name": "Title of Login Page is Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in",
             "match": {
-              "location": "LoginStepDefination.check_Title()"
+              "location": "loginDataDrivenStepDefination.title_of_Login_Page_is_Online_Shopping_site_in_India_Shop_Online_for_Mobiles_Books_Watches_Shoes_and_More_Amazon_in()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2317836850,
+              "duration": 2452038085,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 28,
-                "value": "#Data Driven Testing"
+                "line": 6,
+                "value": "#Test Data Table"
               }
             ],
-            "line": 29,
-            "name": "User enters \"akshayshete10024@gmail.com\" as username and User enters \"Joker#100\" as password",
+            "line": 7,
+            "name": "User enters username and User enters password",
             "match": {
-              "arguments": [
-                {
-                  "val": "akshayshete10024@gmail.com",
-                  "offset": 13
-                },
-                {
-                  "val": "Joker#100",
-                  "offset": 70
-                }
-              ],
-              "location": "LoginStepDefination.user_enters_as_username_and_User_enters_as_password(String,String)"
+              "location": "loginDataDrivenStepDefination.user_enters_username_and_User_enters_password(DataTable)"
             },
-            "matchedColumns": [
-              0,
-              1
+            "rows": [
+              {
+                "cells": [
+                  "akshayshete10024@gmail.com",
+                  "Joker#100"
+                ],
+                "line": 8
+              }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3482611276,
+              "duration": 4051947905,
               "status": "passed"
             },
-            "line": 30,
+            "line": 9,
             "name": "User clicks on Login button",
             "match": {
-              "location": "LoginStepDefination.user_clicks_on_Login_button()"
+              "location": "loginDataDrivenStepDefination.user_clicks_on_Login_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 89269144,
+              "duration": 100141938,
               "status": "passed"
             },
-            "line": 31,
+            "line": 10,
             "name": "User is on home page",
             "match": {
-              "location": "LoginStepDefination.user_is_on_home_page()"
+              "location": "loginDataDrivenStepDefination.user_is_on_home_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2209908112,
+              "duration": 2127197219,
               "status": "passed"
             },
-            "line": 32,
+            "line": 11,
             "name": "User LogOut the application",
             "match": {
-              "location": "LoginStepDefination.user_logout_the_application()"
+              "location": "loginDataDrivenStepDefination.user_LogOut_the_application()"
             },
             "keyword": "Then "
           }
@@ -109,6 +104,6 @@
     "description": "",
     "id": "amazon-login-feature",
     "keyword": "Feature",
-    "uri": "C:/Users/akshay.shete/workspace/AmazonBDDFramework/src/main/java/Features/login.feature"
+    "uri": "C:/Users/akshay.shete/workspace/AmazonBDDFramework/src/main/java/Features/loginDataDriven.feature"
   }
 ]
