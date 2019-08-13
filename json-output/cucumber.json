@@ -1,0 +1,114 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 37,
+        "name": "Amazon Login Test Scenario",
+        "description": "",
+        "id": "amazon-login-feature;amazon-login-test-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15943730883,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User is already on Login Page",
+            "match": {
+              "location": "LoginStepDefination.user_already_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17367949,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Title of Login Page is Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in",
+            "match": {
+              "location": "LoginStepDefination.check_Title()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2317836850,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 28,
+                "value": "#Data Driven Testing"
+              }
+            ],
+            "line": 29,
+            "name": "User enters \"akshayshete10024@gmail.com\" as username and User enters \"Joker#100\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "akshayshete10024@gmail.com",
+                  "offset": 13
+                },
+                {
+                  "val": "Joker#100",
+                  "offset": 70
+                }
+              ],
+              "location": "LoginStepDefination.user_enters_as_username_and_User_enters_as_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3482611276,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User clicks on Login button",
+            "match": {
+              "location": "LoginStepDefination.user_clicks_on_Login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 89269144,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User is on home page",
+            "match": {
+              "location": "LoginStepDefination.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2209908112,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User LogOut the application",
+            "match": {
+              "location": "LoginStepDefination.user_logout_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Amazon Login Feature",
+    "description": "",
+    "id": "amazon-login-feature",
+    "keyword": "Feature",
+    "uri": "C:/Users/akshay.shete/workspace/AmazonBDDFramework/src/main/java/Features/login.feature"
+  }
+]
