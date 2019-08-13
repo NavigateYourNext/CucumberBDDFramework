@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features = "C:\\Users\\akshay.shete\\workspace\\AmazonBDDFramework\\src\\main\\java\\Features\\loginDataDriven.feature", //path of feature file in Features tag
+features = "C:\\Users\\akshay.shete\\workspace\\AmazonBDDFramework\\src\\main\\java\\Features\\loginMap.feature", //path of feature file in Features tag
 glue = {"stepDefinations"}, //path of StepDefination in Glue tag
 format={"pretty","html:test-output/cucumber.html","json:json-output/cucumber.json","junit:junit-xml/cucumber.xml"}, //format of report generation
 dryRun= false, //make it true :- to check for every step of scenario we have defined stepDefination or not and later make it false
