@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0">
-<testcase classname="Learn tagging in Cucumber" name="Mouse Movement10" time="0">
-<system-out><![CDATA[Given : User is on Amazon Page10............................................skipped
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.281965">
+<testcase classname="Amazon Login Feature" name="Amazon Login Test Scenario" time="16.281965">
+<system-out><![CDATA[Given User is already on Login Page.........................................passed
+When Title of Login Page is Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in.passed
+Then User enters "akshayshete10024@gmail.com" as username and User enters "Joker#100" as password.passed
+Then User clicks on Login button............................................passed
+Then User is on home page...................................................passed
+Then User LogOut the application............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

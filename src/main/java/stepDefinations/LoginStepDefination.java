@@ -1,5 +1,6 @@
-/*package stepDefinations;
+package stepDefinations;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,11 +14,12 @@ import cucumber.api.java.en.When;
 public class LoginStepDefination
 {
 	WebDriver driver;
-
+	Logger log = Logger.getLogger(LoginStepDefination.class);
 
 	@Given("^User is already on Login Page$")
 	public void user_already_on_login_page()
 	{
+		log.info("Test Started");
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.amazon.in/");
@@ -77,8 +79,8 @@ public class LoginStepDefination
 		action.moveToElement(driver.findElement(By.xpath("//span[@class='nav-line-2' and text()='Account & Lists']"))).build().perform();
 		driver.findElement(By.xpath("//span[contains(text(),'Sign Out')]")).click();
 		driver.quit();
+		log.info("Test Ended");
 	}
 
 
 }
-*/

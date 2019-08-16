@@ -4,46 +4,111 @@
     "elements": [
       {
         "line": 40,
-        "name": "Mouse Movement10",
+        "name": "Amazon Login Test Scenario",
         "description": "",
-        "id": "learn-tagging-in-cucumber;mouse-movement10",
+        "id": "amazon-login-feature;amazon-login-test-scenario;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 8827202810,
+              "status": "passed"
             },
-            "line": 41,
-            "name": ": User is on Amazon Page10",
+            "line": 28,
+            "name": "User is already on Login Page",
+            "match": {
+              "location": "LoginStepDefination.user_already_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22512469,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Title of Login Page is Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in",
+            "match": {
+              "location": "LoginStepDefination.check_Title()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2337421317,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 30,
+                "value": "#Data Driven Testing"
+              }
+            ],
+            "line": 31,
+            "name": "User enters \"akshayshete10024@gmail.com\" as username and User enters \"Joker#100\" as password",
             "match": {
               "arguments": [
                 {
-                  "val": "10",
-                  "offset": 24
+                  "val": "akshayshete10024@gmail.com",
+                  "offset": 13
+                },
+                {
+                  "val": "Joker#100",
+                  "offset": 70
                 }
               ],
-              "location": "TaggingStepDefination.user_is_on_Amazon_Page(int)"
+              "location": "LoginStepDefination.user_enters_as_username_and_User_enters_as_password(String,String)"
             },
-            "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "line": 39,
-            "name": "@SmokeTest"
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
           },
           {
-            "line": 39,
-            "name": "@SanityTest"
+            "result": {
+              "duration": 2806722706,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User clicks on Login button",
+            "match": {
+              "location": "LoginStepDefination.user_clicks_on_Login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 80687249,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User is on home page",
+            "match": {
+              "location": "LoginStepDefination.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2207418696,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User LogOut the application",
+            "match": {
+              "location": "LoginStepDefination.user_logout_the_application()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Learn tagging in Cucumber",
+    "name": "Amazon Login Feature",
     "description": "",
-    "id": "learn-tagging-in-cucumber",
+    "id": "amazon-login-feature",
     "keyword": "Feature",
-    "uri": "C:/Users/akshay.shete/workspace/AmazonBDDFramework/src/main/java/Features/Tagging.feature"
+    "uri": "C:/Users/akshay.shete/workspace/AmazonBDDFramework/src/main/java/Features/login.feature"
   }
 ]
