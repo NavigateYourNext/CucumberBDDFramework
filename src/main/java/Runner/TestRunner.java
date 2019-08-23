@@ -14,7 +14,7 @@ format={"pretty","html:test-output/cucumber.html","json:json-output/cucumber.jso
 dryRun= false, //make it true :- to check for every step of scenario we hve defined stepDefaination or not and later make it false
 monochrome = true, //make it true :- for readable console output
 strict = true //make it true :- It will failed execution if any stepDefination method is missing for the scenario steps
-//tags={"~@RegressionTest","@SanityTest"} // , means OR :-  a test cases which have both the tags defined and ~ is for ignore
+//tags={"~@RegressionTest","@SanityTest"} // (,) means OR :-  a test cases which have both the tags defined and ~ is for ignore
 )
 
 public class TestRunner 
